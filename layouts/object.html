@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="/css/template.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  <div class="grid">
+    <section class="viewer_3d">
+      <model-viewer src="/glb/{{3d_model}}" ar camera-controls touch-action="pan-y"></model-viewer>
+    </section>
+
+    <section class="leftSec">
+      <div class="artifact">
+        <span>Artifact</span>
+        {{ name }}
+      </div>
+      <div class="date">
+        <span>Date</span>
+        {{ date }}
+      </div>
+      <div class="place">
+        <span>Place</span>
+        {{ place }}
+      </div>
+      <div class="description">
+        <span>Description</span>
+        <p>{{ description }}</p>
+      </div>
+      {{#if this.story}}
+        <div class="story">
+          <span>Story</span>
+          <audio controls controlsList="nodownload noplaybackrate">
+            <source src="/audio/{{this.story}}" type="audio/mpeg">
+          </audio>
+          {{#if this.transcript}}
+            <div id="readTranscript" onclick="showTranscript()">Read Transcript</div>
+          {{/if}}
+        </div>
+      {{/if}}
+    </section>
+    {{#if this.previous.path}}
+      <a href="/{{this.previous.path}}">
+
+        <!-- buttons -->
+        <div class="button" id="previous">
+          <img src="/imgs/previous.png" alt="">
+        </div>
+      </a>
+    {{/if}}
+    {{#if this.next.path}}
+      <a href="/{{this.next.path}}">
+        <div class="button" id="next">
+          <img src="/imgs/next.png" alt="">
+        </div>
+      </a>
+    {{/if}}
+    <a href="/">
+      <div class="button" id="close">
+        <img src="/imgs/close.png" alt="">
+      </div>
+    </a>
+
+    {{#if this.transcript}}
+      <div id="transcript">
+        <div id="closeTranscript" onclick="hideTranscript()">
+          Close
+        </div>
+        <div class="content">
+          {{{ contents }}}
+        </div>
+        <div id="overflow"></div>
+      </div>
+    {{/if}}
+
+  </div>
+  <script type="text/javascript">
+    function hideTranscript() {
+      document.getElementById('transcript').style.visibility = 'hidden';
+    }
+
+    function showTranscript() {
+      document.getElementById('transcript').style.visibility = 'visible';
+    }
+  </script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <script>
+    self.ModelViewerElement = self.ModelViewerElement || {};
+    self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
+  </script>
+</body>
+
+</html>

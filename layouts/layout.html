@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="/css/template.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="grid">
+    <section class="gallery">
+      {{#each collections.objects}}
+      <a href="{{this.path}}">
+        <div class="object">
+              <!-- object 3d model-->
+              <model-viewer src="../../glb/{{this.3d_model}}" loading="eager"></model-viewer>
+              <span>Artifact no.{{this.number}}</span>
+              <h4>{{this.name}}</h4>
+        </div>
+        </a>
+      {{/each}}
+
+  </div> <!-- end of wrapper -->
+  </section>
+  <script>
+    self.ModelViewerElement = self.ModelViewerElement || {};
+    self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
+  </script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: 'Neue Haas Unica W1G';
+  font-weight: 700;
+  src: url('/font/ttf/NeueHaasUnicaW1G-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica W1G';
+  font-weight: 400;
+  src: url('/font/ttf/NeueHaasUnicaW1G-Regular.ttf');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-variant-ligatures: common-ligatures;
+  background: var(--main-sand-with-shadow, linear-gradient(180deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.04) 100%), #EBE8E7);
+}
+
+/* p, ul.outcomes {
+  font-family: 'Cassia', sans-serif;
+} */
+b {
+  font-weight: 600;
+}
+
+sub, p.meta {
+  color: grey;
+}
+
+section {
+  height: 100%;
+  float: left;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  text-transform: capitalize;
+}
+
+nav li {
+  padding: 0 1.5em 0 0.5em;
+}
+
+p, ul {
+  max-width: 700px;
+}
+
+.gallery div {
+  width:286px;
+  height:340px;
+  float: left;
+  color: var(--main-black, #000);
+  /* universal UI/S */
+  font-family: "Neue Haas Unica W1G";
+  position:relative;
+}
+.gallery div model-viewer {
+  width:100%;
+  height: 80%;
+}
+.gallery div h4 {
+  top:30px;
+  left:10px;
+  position: absolute;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 90%;
+}
+.gallery div span {
+  top:10px;
+  left:10px;
+  position: absolute;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 16.1px */
+}
+
+.container {
+  max-width: 860px;
+  margin: 40px auto;
+}
+
+.leftSec {
+  position: absolute;
+  display: flex;
+  width: 440px;
+  padding: 40px 40px 80px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  z-index: 1;
+}
+
+.leftSec div {
+  color: #000;
+}
+
+.leftSec div {
+  /* universal UI/body L */
+  font-family: "Neue Haas Unica W1G";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 31.2px */
+}
+
+.leftSec div span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 115%;
+  /* 16.1px */
+  display: block;
+}
+
+.leftSec div p {
+  /* universal UI/body S */
+  font-family: "Neue Haas Unica W1G";
+  font-size: 18px;
+  line-height: 140%;
+  /* 25.2px */
+}
+
+.leftSec div.story audio {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: transparent;
+}
+
+.leftSec div.story #readTranscript {
+  text-decoration: underline;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  /* 16.1px */
+}
+
+div[onclick] {
+  cursor: pointer;
+}
+
+#transcript {
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 2;
+  padding: 56px;
+  gap: 24px;
+  background: var(--main-sand, #EBE8E7);
+  /* center */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+#transcript .content {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  /* to hide scroll bar */
+  padding-right: 70px;
+  box-sizing: content-box;
+}
+
+#transcript .meta {
+  margin-bottom: 24px;
+}
+
+#transcript #overflow {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(235, 232, 231, 0.00) 0%, #EBE8E7 100%);
+}
+
+#transcript span {
+  color: var(--main-black, #000);
+  /* universal UI/S */
+  font-family: "Neue Haas Unica W1G";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  /* 16.1px */
+}
+
+#closeTranscript {
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  display: flex;
+  padding: 2px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--main-black, #000);
+}
+
+#transcript p {
+  color: var(--main-black, #000);
+  font-family: "Neue Haas Unica W1G";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 31.2px */
+  margin-bottom: 1.3em;
+}
+
+.viewer_3d {
+  height: 100%;
+  width: 940px;
+  float: right;
+}
+
+.viewer_3d model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+model-viewer::part(default-progress-bar) {
+  visibility: hidden;
+}
+
+.button {
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: var(--main-sand, #EBE8E7);
+  /* button-default */
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.10);
+}
+
+.button#next {
+  right: 0;
+  bottom: 0;
+}
+
+.button#previous {
+  left: 0;
+  bottom: 0;
+}
+
+.button#close {
+  top: 0;
+  right: 0;
+}
+
+footer {
+  font-size: 0.8em;
+  bottom: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  line-height: 1px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a.website {
+  border-bottom: 2px solid #333;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+a:hover {
+  border-bottom: 1px solid #333;
+}
+
+h1, h2, h4, h5, p {
+  line-height: 1.3em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.1em;
+  font-weight: 500;
+}
+
+h1 img {
+  width: 500px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2.3em;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* ==========================================================================
+  Responsible Design, breakpoint according to bootstrap
+   ========================================================================== */
+/*Large Devices Large Desktop 992-1200*/
+@media only screen and (min-width: 1200px) {}
+
+/*Small Devices Tablet 768-992*/
+@media only screen and (max-width: 800px) {
+  #transcript {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  body {
+    height: auto;
+  }
+
+  .button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .button {
+    display: flex;
+    padding: 24px;
+    margin-top: 4px;
+    margin-left: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button#next {
+    top: 0;
+    bottom: auto;
+    left: 68px;
+    right: auto;
+  }
+
+  .button#previous {
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto;
+  }
+
+  .button#close {
+    margin-right: 4px;
+  }
+
+  .leftSec {
+    position: static;
+    padding: 20px 20px 56px 20px;
+  }
+
+  .viewer_3d {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    float: none;
+  }
+
+  .viewer_3d model-viewer {
+    height: 350px;
+    width: 400px;
+  }
+}
