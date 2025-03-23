@@ -57,15 +57,6 @@ a:active {
   background-color: rgba(30, 30, 30, 0.5);
 }
 
-.menu {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  left: 50%;
-  position: relative;
-  margin-left: -270px;
-}
-
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -236,20 +227,6 @@ body {
   margin: 0;
 }
 
-.grid {
-  width: 100%;
-  height:100%;
-  max-width: 1440px;
-  min-width: 755px;
-  margin: 0 auto;
-  padding-left: 20px;
-}
-
-/*.grid:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
 .row {}
 
 .push-right {
@@ -1006,15 +983,6 @@ table {
 
 .site-navigation.forensic {
   background-color: rgba(30, 30, 30, 0.5);
-}
-
-.menu {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  left: 50%;
-  position: relative;
-  margin-left: -270px;
 }
 
 .clearfix:after {

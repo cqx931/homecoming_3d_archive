@@ -1,6 +1,6 @@
 ---
 number: 7
-name: cherryShapedPendant
+name: cherry Shaped Pendant
 path: cherryShapedPendant
 layout: object.html
 collection: objects

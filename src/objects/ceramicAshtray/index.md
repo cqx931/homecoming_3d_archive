@@ -1,6 +1,6 @@
 ---
 number: 6
-name: ceramicAshtray
+name: ceramic Ashtray
 path: ceramicAshtray
 layout: object.html
 collection: objects

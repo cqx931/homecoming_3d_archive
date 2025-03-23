@@ -1,6 +1,6 @@
 ---
 number: 4
-name: braidedThing
+name: braided Thing
 path: braidedThing
 layout: object.html
 collection: objects
