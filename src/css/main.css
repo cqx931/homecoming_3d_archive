@@ -492,7 +492,7 @@ div[onclick] {
 }
 
 .viewer_3d {
-  height: 100%;
+  height: 700px;
   width: 940px;
   float: right;
 }
