@@ -1,16 +1,17 @@
 ---
 number: 16
-name: meduza
+name: Roman phaler
 path: meduza
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: Early Middle Ages
+place: Place unknown
+description: Phalera, attributed to Roman culture. Discovered in 2019 by Idris Aliyev. Material: bronze, dated to the Early Middle Ages.
 3d_model: meduza.glb
-story: meteorite_audio.mp3
+story: 16-medusa.mp3
 transcript: true
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>

@@ -1,16 +1,17 @@
 ---
 number: 19
-name: pointyRingBadLighting
+name: Archer ring
 path: pointyRingBadLighting
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: Date unknown
+place: Place unknown
+description: Bronze Age, donated to the museum collection of the Khinaliq Reserve by local resident Yunis Serkerov in 2022.
 3d_model: pointyRingBadLighting.glb
-story: meteorite_audio.mp3
+story: 22-archer-ring.mp3
 transcript: true
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>

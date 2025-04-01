@@ -1,16 +1,17 @@
 ---
 number: 25
-name: sickle
+name: Stone cutting tool
 path: sickle
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: III millenium BC
+place: Zangar settlement
+description: Cutting tool made of stone. Above-ground material III millennium BC Zangar settlement. Found by Hasan Aghayev in 2024.
 3d_model: sickle.glb
-story: meteorite_audio.mp3
+story: 18-cutting.mp3
 transcript: true
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>

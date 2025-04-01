@@ -1,16 +1,17 @@
 ---
 number: 6
-name: ceramic Ashtray
+name: Clay vessel
 path: ceramicAshtray
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: XVIII century
+place: Khinalig village
+description: A small clay vessel, 18th cen- tury. Donated to the Khinalig museum by a local resident in 2017.
 3d_model: ceramicAshtray.glb
-story: meteorite_audio.mp3
+story: 27clay-vessel.mp3
 transcript: true
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>

@@ -1,16 +1,17 @@
 ---
 number: 2
-name: bone
+name: Lower jawbone
 path: bone
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: IV-III centuries BC
+place: Kıma liqebriş
+description: Human lower jawbone, VI - III centuries BC. Was found in Kıma Liqebriş funerary mon- ument in 2019.
 3d_model: bone.glb
-story: meteorite_audio.mp3
-transcript: true
+story: 28bone.mp3
+transcript: false
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>

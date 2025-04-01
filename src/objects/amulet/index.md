@@ -1,20 +1,21 @@
 ---
 number: 0
-name: amulet
+name: Bronze amulet
 path: amulet
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: III millenium BC
+place: Zangar settlement
+description: Bronze amulet found in the Zangar settlement, III millennium BC (Early Bronze Age).
 3d_model: amulet.glb
-story: meteorite_audio.mp3
+story: 15-amulet-audio.mp3
 transcript: true
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>
-Recorded by Nilya's collaborator
+Transcribed by Gunay Ramazanova
 </div>
 
 I was digging near the old well, clearing out weeds and loosening the soil when my spade struck something solid. At first, I thought it was just another stone, but when I brushed away the dirt, a small, intricately carved amulet emerged from the earth. Its surface was covered in geometric patterns, worn smooth in places but still distinct, as if whispering an ancient story.

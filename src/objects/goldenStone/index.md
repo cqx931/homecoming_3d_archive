@@ -1,16 +1,17 @@
 ---
 number: 12
-name: goldenStone
+name: Golden stone
 path: goldenStone
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
-description: Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu
+date: Date unknown
+place: Khinalig graveyard
+description: This stone belongs to the collection of Hakim Ahmedov. This one is believed to be found in the cemetery and has some golden marks on top.
 3d_model: goldenStone.glb
-story: meteorite_audio.mp3
-transcript: true
+story: NONE
+transcript: no
 ---
+
 <div class="meta">
 Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>
