@@ -18,7 +18,7 @@ html, body {
   font-size: 13px;
   line-height: 1.4;
   font-family: sans-serif;
-  min-width: 560px;
+  min-width: 375px;
 }
 
 h1, h2, h3, h4, h5, p {
