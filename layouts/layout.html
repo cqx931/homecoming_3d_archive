@@ -12,21 +12,21 @@
 
 <body>
   <div id="gridContainer" class="grid-3">
-      {{#each collections.objects}}
+    {{#each collections.objects}}
       <a href="{{this.path}}">
         <div class="object">
-              <!-- object 3d model-->
-              <model-viewer src="../../glb/{{this.3d_model}}" loading="eager"></model-viewer>
-              <div class="meta">
-                <span>Artifact no.{{this.number}}</span>
-                <h4>{{this.name}}</h4>
-              </div>
-              <div class="open_button">
-                Open
-              </div>
+          <!-- object 3d model-->
+          <model-viewer src="../../glb/{{this.3d_model}}" loading="eager"></model-viewer>
+          <div class="meta">
+            <span>Artifact no.{{this.number}}</span>
+            <h4>{{this.name}}</h4>
+          </div>
+          <div class="open_button">
+            Open
+          </div>
         </div>
-        </a>
-      {{/each}}
+      </a>
+    {{/each}}
   </div> <!-- end of wrapper -->
 
   <div class="menu-mobile" id="mobileMenu">
@@ -36,8 +36,8 @@
     </div>
     <div class="container-divider">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 600 2" fill="none">
-        <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05"/>
-        </svg>
+        <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05" />
+      </svg>
     </div>
     <div class="section-tabs">
       <span>Rotation</span>
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="container-divider"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 600 2" fill="none">
-      <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05"/>
+        <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05" />
       </svg></div>
     <div class="menu-item">
       <div class="container-text">About</div>
@@ -62,10 +62,10 @@
     </div>
     <div class="container-divider">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 600 2" fill="none">
-        <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05"/>
-        </svg>
+        <rect width="600" height="2" rx="1" fill="black" fill-opacity="0.05" />
+      </svg>
     </div>
-    <div class="container-link"onclick="closeMobileMenu()">
+    <div class="container-link" onclick="closeMobileMenu()">
       <span>Done</span>
     </div>
   </div>
@@ -86,8 +86,8 @@
     </div>
     <div class="container-divider">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 151 2" fill="none">
-        <rect width="151" height="2" rx="1" fill="black" fill-opacity="0.05"/>
-        </svg>
+        <rect width="151" height="2" rx="1" fill="black" fill-opacity="0.05" />
+      </svg>
     </div>
     <div class="section-tabs">
       <span>Rotation</span>
@@ -103,116 +103,118 @@
       </div>
     </div>
     <div class="container-divider"><svg xmlns="http://www.w3.org/2000/svg" width="151" height="2" viewBox="0 0 151 2" fill="none">
-      <rect width="151" height="2" rx="1" fill="black" fill-opacity="0.05"/>
+        <rect width="151" height="2" rx="1" fill="black" fill-opacity="0.05" />
       </svg></div>
     <div class="container-link" id="closeMenu" onclick="closeMenu()">
       <span>Done</span>
     </div>
   </div>
 
-<div class="container-menu" id="menuButton">
+  <div class="container-menu" id="menuButton">
     <div class="mobile-show" onclick="showMobileMenu()">
       Menu
     </div>
-    <div class="menu-item mobile-hide"  onclick="showMenu()">
-      <img src="/imgs/eye.svg" alt="" >
+    <div class="menu-item mobile-hide" onclick="showMenu()">
+      <img src="/imgs/eye.svg" alt="">
       <div class="container-text mobile-hide">
         <span>View</span>
         <img class="hide" src="/imgs/close.png" id="close-menu-icon" onclick="closeMenu()">
       </div>
     </div>
-  <a class="mobile-hide" href="index.html">
-  <div class="menu-item">
-    <img src="/imgs/question-mark.svg" alt="" >
-    <div class="container-text">
-      <span>About</span>
+    <a class="mobile-hide" href="index.html">
+      <div class="menu-item">
+        <img src="/imgs/question-mark.svg" alt="">
+        <div class="container-text">
+          <span>About</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <a href="inde.html">
+    <div id="logo">
+      <img src="/imgs/xinaliq.svg" alt="">
     </div>
-  </div></a>
-</div>
+  </a>
 
-<a href="inde.html">
-<div id="logo">
-  <img src="/imgs/xinaliq.svg" alt="">
-</div></a>
+  <script type="text/javascript">
+    const d = document;
 
-<script type="text/javascript">
-  const d = document;
-
-  function closeMenu() {
-    d.getElementById('menu').style.visibility = 'hidden';
-    d.getElementById('close-menu-icon').style.display = 'none';
-  }
-
-  function showMenu() {
-    d.getElementById('menu').style.visibility = 'visible';
-    d.getElementById('close-menu-icon').style.display = 'block';
-  }
-
-  function showMobileMenu() {
-    d.getElementById('mobileMenu').style.visibility = 'visible';
-    d.getElementById('menuButton').style.visibility = 'hidden';
-  }
-  function closeMobileMenu() {
-    d.getElementById('mobileMenu').style.visibility = 'hidden';
-    d.getElementById('menuButton').style.visibility = 'visible';
-  }
-
-  function enableRotate() {
-    const models = d.getElementsByTagName('model-viewer');
-    for (const m of models) {
-      // add attribute: auto-rotate
-      m.setAttribute("auto-rotate","");
+    function closeMenu() {
+      d.getElementById('menu').style.visibility = 'hidden';
+      d.getElementById('close-menu-icon').style.display = 'none';
     }
-    d.getElementsByClassName("no")[0].getElementsByClassName('check')[0].classList.add("hide");
-    d.getElementsByClassName("yes")[0].getElementsByClassName('check')[0].classList.remove("hide");
-    d.getElementsByClassName("no")[1].getElementsByClassName('check')[0].classList.add("hide");
-    d.getElementsByClassName("yes")[1].getElementsByClassName('check')[0].classList.remove("hide");
-  }
 
-  function disableRotate() {
-    const models = document.getElementsByTagName('model-viewer');
-    for (const m of models) {
-      m.removeAttribute("auto-rotate");
+    function showMenu() {
+      d.getElementById('menu').style.visibility = 'visible';
+      d.getElementById('close-menu-icon').style.display = 'block';
     }
-    d.getElementsByClassName("yes")[0].getElementsByClassName('check')[0].classList.add("hide");
-    d.getElementsByClassName("no")[0].getElementsByClassName('check')[0].classList.remove("hide");
-    d.getElementsByClassName("yes")[1].getElementsByClassName('check')[0].classList.add("hide");
-    d.getElementsByClassName("no")[1].getElementsByClassName('check')[0].classList.remove("hide");
-  }
 
-  function changeLayout(n){
-    const grid = document.getElementById('gridContainer');
-    const grid3 = document.getElementById('grid3');
-    const grid5 = document.getElementById('grid5');
-
-    if (n == 3) {
-      grid.classList.remove("grid-5");
-      grid.classList.add("grid-3");
-      grid5.getElementsByClassName('check')[0].classList.add("hide");
-      grid3.getElementsByClassName('check')[0].classList.remove("hide");
-    } else if (n == 5) {
-      grid.classList.remove("grid-3");
-      grid.classList.add("grid-5");
-      grid3.getElementsByClassName('check')[0].classList.add("hide");
-      grid5.getElementsByClassName('check')[0].classList.remove("hide");
+    function showMobileMenu() {
+      d.getElementById('mobileMenu').style.visibility = 'visible';
+      d.getElementById('menuButton').style.visibility = 'hidden';
     }
-  }
 
-  function inIframe() {
-    try {
-      return window.self !== window.top;
-    } catch (Exception) {
-      return true;
+    function closeMobileMenu() {
+      d.getElementById('mobileMenu').style.visibility = 'hidden';
+      d.getElementById('menuButton').style.visibility = 'visible';
     }
-  }
 
-  if (inIframe()) {
-    document.getElementById("menuButton").classList.add("hide");
-    document.getElementById("logo").classList.add("hide");
-    // Alternatively you could skip the CSS and just hide elements using JavaScript here!.
-  }
+    function enableRotate() {
+      const models = d.getElementsByTagName('model-viewer');
+      for (const m of models) {
+        // add attribute: auto-rotate
+        m.setAttribute("auto-rotate", "");
+      }
+      d.getElementsByClassName("no")[0].getElementsByClassName('check')[0].classList.add("hide");
+      d.getElementsByClassName("yes")[0].getElementsByClassName('check')[0].classList.remove("hide");
+      d.getElementsByClassName("no")[1].getElementsByClassName('check')[0].classList.add("hide");
+      d.getElementsByClassName("yes")[1].getElementsByClassName('check')[0].classList.remove("hide");
+    }
 
-</script>
+    function disableRotate() {
+      const models = document.getElementsByTagName('model-viewer');
+      for (const m of models) {
+        m.removeAttribute("auto-rotate");
+      }
+      d.getElementsByClassName("yes")[0].getElementsByClassName('check')[0].classList.add("hide");
+      d.getElementsByClassName("no")[0].getElementsByClassName('check')[0].classList.remove("hide");
+      d.getElementsByClassName("yes")[1].getElementsByClassName('check')[0].classList.add("hide");
+      d.getElementsByClassName("no")[1].getElementsByClassName('check')[0].classList.remove("hide");
+    }
+
+    function changeLayout(n) {
+      const grid = document.getElementById('gridContainer');
+      const grid3 = document.getElementById('grid3');
+      const grid5 = document.getElementById('grid5');
+
+      if (n == 3) {
+        grid.classList.remove("grid-5");
+        grid.classList.add("grid-3");
+        grid5.getElementsByClassName('check')[0].classList.add("hide");
+        grid3.getElementsByClassName('check')[0].classList.remove("hide");
+      } else if (n == 5) {
+        grid.classList.remove("grid-3");
+        grid.classList.add("grid-5");
+        grid3.getElementsByClassName('check')[0].classList.add("hide");
+        grid5.getElementsByClassName('check')[0].classList.remove("hide");
+      }
+    }
+
+    function inIframe() {
+      try {
+        return window.self !== window.top;
+      } catch (Exception) {
+        return true;
+      }
+    }
+
+    if (inIframe()) {
+      document.getElementById("menuButton").classList.add("hide");
+      document.getElementById("logo").classList.add("hide");
+      // Alternatively you could skip the CSS and just hide elements using JavaScript here!.
+    }
+  </script>
   <script>
     self.ModelViewerElement = self.ModelViewerElement || {};
     self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
