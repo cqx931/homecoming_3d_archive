@@ -418,6 +418,7 @@ nav li {
   align-self: stretch;
 }
 .landing {
+  position: relative;
   display: flex;
   width:100%;
   max-width:1920px;
@@ -441,7 +442,6 @@ nav li {
 .landing #obj1 {
   width: 389.47px;
   height: 259.647px;
-  transform: rotate(58.204deg);
   left: 17px;
   bottom: 1380.563px;
 }
