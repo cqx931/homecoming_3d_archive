@@ -198,6 +198,20 @@
     }
   }
 
+  function inIframe() {
+    try {
+      return window.self !== window.top;
+    } catch (Exception) {
+      return true;
+    }
+  }
+
+  if (inIframe()) {
+    document.getElementById("menuButton").classList.add("hide");
+    document.getElementById("logo").classList.add("hide");
+    // Alternatively you could skip the CSS and just hide elements using JavaScript here!.
+  }
+
 </script>
   <script>
     self.ModelViewerElement = self.ModelViewerElement || {};

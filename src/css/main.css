@@ -399,6 +399,7 @@ nav li {
   margin: 40px auto;
 }
 .enter_archive {
+  z-index: 1;
   display: flex;
   width:100%;
   max-width: 1920px;
@@ -426,6 +427,18 @@ nav li {
   flex-direction: column;
   align-items: flex-end;
   background: var(--main-sand, #EBE8E7);
+}
+iframe {
+  border: none;
+  pointer-events: none;
+  height: calc(100vw/3/477*560);
+}
+.dection_objects {
+  display: flex;
+  padding: 0px 2px;
+  align-items: center;
+  gap: 2px;
+  align-self: stretch;
 }
 .landing > img {
   position: absolute;
@@ -467,9 +480,8 @@ nav li {
 .landing #obj5 {
   width: 465px;
   height: 355px;
-  transform: rotate(-149.26deg);
-  right: -0.001px;
-  bottom: 508.591px;
+  right: 0px;
+  bottom: 600px;
 }
 .landing .quote {
   display: flex;
@@ -492,6 +504,7 @@ nav li {
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
+  mouse:pointer;
 }
 .landing_body {
   display: flex;
