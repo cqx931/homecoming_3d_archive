@@ -17,4 +17,5 @@ Told by Yusif on March 6, 2025 <br>
 Translated by Nilufer Musaeva<br>
 Transcribed by Gunay Ramazanova
 </div>
+
 Bronze button – Found in the ancient human settlement of Kıma liqebriş, Xinaliq, in 2021. The edges are decorated with straight lines. The back has a place for fastening. It is round, with a raised center.

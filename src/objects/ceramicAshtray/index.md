@@ -17,4 +17,5 @@ Told by Someone's Name on August 5, 2024 <br>
 Translated by Nilufer Musaeva<br>
 Recorded by Nilya's collaborator
 </div>
+
 A clay drinking vessel. The surface is rough, the handle is broken off and missing. No decorations are visible. Dated to the 20th century.

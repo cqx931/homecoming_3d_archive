@@ -16,6 +16,6 @@ transcript: true
 Told by Yusif on March 6, 2025 <br>
 Translated by Nilufer Musaeva<br>
 Transcribed by Gunay Ramazanova
-
 </div>
+
 A bronze button was found in the ancient Zangar settlement in 2012. It is bow-shaped, approximately 1.3 cm in diameter. Dated to the 3rd millennium BCE.

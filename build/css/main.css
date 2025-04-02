@@ -266,7 +266,6 @@ nav li {
 }
 #mobileMenu {
   visibility: hidden;
-  transition: visibility 0.5s ease-in-out;
 }
 .menu-item {
   display: flex;
@@ -361,7 +360,6 @@ nav li {
   background: var(--main-sand, #EBE8E7);
   /* menu */
   box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.15);
-  transition: visibility 0.5s ease-in-out;
 }
 
 #logo {
@@ -1058,7 +1056,6 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 115%;
-
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
     /* 16.1px */
