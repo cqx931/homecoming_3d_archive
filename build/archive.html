@@ -515,11 +515,11 @@
     <div class="mobile-show" onclick="showMobileMenu()">
       Menu
     </div>
-    <div class="menu-item mobile-hide" onclick="showMenu()">
-      <img src="/imgs/eye.svg" alt="">
+    <div class="menu-item mobile-hide" >
+      <img src="/imgs/eye.svg" alt="" onclick="showMenu()">
       <div class="container-text mobile-hide">
-        <span>View</span>
-        <img class="hide" src="/imgs/close.png" id="close-menu-icon" onclick="closeMenu()">
+        <span onclick="showMenu()">View</span>
+        <img src="/imgs/close.png" id="close-menu-icon" onclick="closeMenu()">
       </div>
     </div>
     <a class="mobile-hide" href="index.html">
