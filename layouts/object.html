@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+<body class="object">
 
   <div class="grid">
     <section class="viewer_3d">
-      <model-viewer src="/glb/{{3d_model}}" ar camera-controls touch-action="pan-y"></model-viewer>
+      <model-viewer src="/glb/{{3d_model}}" ar camera-controls touch-action="pan-y" disable-zoom></model-viewer>
     </section>
 
     <section class="leftSec">
@@ -72,19 +72,20 @@
 
     {{#if this.transcript}}
       <div id="transcript">
-        <div id="closeTranscript" onclick="hideTranscript()">
-          Close
-        </div>
-        <div class="content">
-          {{{ contents }}}
-        </div>
-        <div id="overflow"></div>
+          <div id="closeTranscript" onclick="hideTranscript()">
+            Close
+          </div>
+          <div class="content">
+            {{{ contents }}}
+          </div>
+          <div id="overflow"></div>
       </div>
     {{/if}}
 
   </div>
   <script type="text/javascript">
     function hideTranscript() {
+      console.log("hideTranscript");
       document.getElementById('transcript').style.visibility = 'hidden';
     }
 

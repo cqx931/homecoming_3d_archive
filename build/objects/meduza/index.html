@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+<body class="object">
 
   <div class="grid">
     <section class="viewer_3d">
-      <model-viewer src="/glb/meduza.glb" ar camera-controls touch-action="pan-y"></model-viewer>
+      <model-viewer src="/glb/meduza.glb" ar camera-controls touch-action="pan-y" disable-zoom></model-viewer>
     </section>
 
     <section class="leftSec">
@@ -61,11 +61,11 @@
     </a>
 
       <div id="transcript">
-        <div id="closeTranscript" onclick="hideTranscript()">
-          Close
-        </div>
-        <div class="content">
-          <div class="meta">
+          <div id="closeTranscript" onclick="hideTranscript()">
+            Close
+          </div>
+          <div class="content">
+            <div class="meta">
 Told by Yusif on March 6, 2025 <br>
 Translated by Nilufer Musaeva<br>
 Transcribed by Gunay Ramazanova
@@ -73,13 +73,14 @@ Transcribed by Gunay Ramazanova
 
 <p>Medusa – Found in Kıma liqebriş, Xinaliq. Discovered in 2020. A human face is depicted on its surface. Dated to the 6th–5th centuries BCE. Material: copper and bronze.</p>
 
-        </div>
-        <div id="overflow"></div>
+          </div>
+          <div id="overflow"></div>
       </div>
 
   </div>
   <script type="text/javascript">
     function hideTranscript() {
+      console.log("hideTranscript");
       document.getElementById('transcript').style.visibility = 'hidden';
     }
 

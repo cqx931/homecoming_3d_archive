@@ -96,6 +96,10 @@ nav li {
   margin: 0 auto;
 }
 
+body.object {
+  background: var(--main-sand-with-shadow, linear-gradient(180deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.04) 100%), #EBE8E7);
+}
+
 .grid {
   max-width: 1920px;
   margin: 0 auto;
@@ -159,15 +163,19 @@ nav li {
 }
 
 .object .meta {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
-  width: 100%;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
+  width: 360px;
+  min-width: 360px;
+  padding: 2px 0px;
+  gap: 10px;
+
+  color: var(--main-black, #000);
+  /* universal UI/S */
+  font-family: "Neue Haas Unica W1G";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 16.1px */
 }
 
 .object span {
@@ -217,18 +225,6 @@ nav li {
 .object model-viewer {
   width: 100%;
   height: 100%;
-}
-
-.object .meta {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
 }
 
 .object span {
@@ -757,30 +753,35 @@ div[onclick] {
 }
 
 #transcript {
+  display: flex;
   width: 800px;
-  height: 100%;
-  overflow: hidden;
+  height: 720px;
+  align-items: flex-start;
   flex-shrink: 0;
+  visibility: hidden;
+  overflow: hidden;
   position: absolute;
-  z-index: 2;
-  padding: 56px;
-  gap: 24px;
+  z-index: 4;
   background: var(--main-sand, #EBE8E7);
   /* center */
+  margin-top:60px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  visibility: hidden;
 }
 
 #transcript .content {
+  padding: 56px;
+  gap: 24px;
+  display: flex;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  /* to hide scroll bar */
-  padding-right: 9vw;
-  box-sizing: content-box;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  background: var(--main-sand, #EBE8E7);
 }
 
 #transcript .meta {
@@ -805,8 +806,12 @@ div[onclick] {
   line-height: 115%;
   /* 16.1px */
 }
+#closeTranscript:hover {
+  cursor: pointer;
+}
 
 #closeTranscript {
+  z-index: 5;
   position: absolute;
   top: 56px;
   right: 56px;
@@ -816,6 +821,13 @@ div[onclick] {
   align-items: center;
   gap: 10px;
   border-bottom: 1px solid var(--main-black, #000);
+  color: var(--main-black, #000);
+  /* universal UI/S */
+  font-family: "Neue Haas Unica W1G";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 16.1px */
 }
 
 #transcript p {
@@ -1139,5 +1151,30 @@ p {
 @media only screen and (min-width: 1440px) {
   .leftSec {
     width: 560px;
+  }
+
+}
+
+@media only screen and (min-width: 1920px) {
+  iframe {
+    height:748px;
+  }
+  .grid {
+    padding: 90px 178px 158px 160px;
+  }
+  .leftSec div p {
+    font-size: 22px;
+  }
+  #transcript {
+    margin-top: 150px;
+  }
+  .object .meta {
+    font-size: 20px;
+  }
+  #transcript p {
+    font-size: 28px;
+  }
+  .viewer_3d {
+    height: 50vh;
   }
 }

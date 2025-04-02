@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+<body class="object">
 
   <div class="grid">
     <section class="viewer_3d">
-      <model-viewer src="/glb/amulet2.glb" ar camera-controls touch-action="pan-y"></model-viewer>
+      <model-viewer src="/glb/amulet2.glb" ar camera-controls touch-action="pan-y" disable-zoom></model-viewer>
     </section>
 
     <section class="leftSec">
@@ -63,6 +63,7 @@
   </div>
   <script type="text/javascript">
     function hideTranscript() {
+      console.log("hideTranscript");
       document.getElementById('transcript').style.visibility = 'hidden';
     }
 
