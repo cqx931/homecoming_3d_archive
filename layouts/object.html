@@ -30,10 +30,12 @@
         <span>Place</span>
         {{ place }}
       </div>
+      {{#if this.description}}
       <div class="description">
         <span>Description</span>
         <p>{{ description }}</p>
       </div>
+      {{/if}}
       {{#if this.story}}
         <div class="story">
           <span>Story</span>

@@ -6,7 +6,7 @@ layout: object.html
 collection: objects
 date: VI century
 place: Kıma liqebriş
-description: Clothing brooch that attributed to Byzantine culture, dated to the Early Middle Ages: VI century. Kıma Liqebriş grave monument, found by Idris Aliyev in 2021. Material: bronze, partially deformed.
+description: "Clothing brooch that attributed to Byzantine culture, dated to the Early Middle Ages: VI century. Kıma Liqebriş grave monument, found by Idris Aliyev in 2021. Material: bronze, partially deformed."
 3d_model: robeThing2.glb
 story: 12-clothespin.mp3
 transcript: true

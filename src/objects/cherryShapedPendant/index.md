@@ -6,7 +6,7 @@ layout: object.html
 collection: objects
 date: VI century
 place: Kıma liqebriş
-description: Early Middle Ages, Byzantine Culture artefacts. Kıma Liqebriş grave monument, discovered by Idris Aliyev in 2021. Material: bronze, estimated to date to the VI century.
+description: "Early Middle Ages, Byzantine Culture artefacts. Kıma Liqebriş grave monument, discovered by Idris Aliyev in 2021. Material: bronze, estimated to date to the VI century."
 3d_model: cherryShapedPendant.glb
 story: 11_bronze_deco.mp3
 transcript: true

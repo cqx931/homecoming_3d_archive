@@ -6,7 +6,7 @@ layout: object.html
 collection: objects
 date: Early Middle Ages
 place: Place unknown
-description: Phalera, attributed to Roman culture. Discovered in 2019 by Idris Aliyev. Material: bronze, dated to the Early Middle Ages.
+description: "Phalera, attributed to Roman culture. Discovered in 2019 by Idris Aliyev. Material: bronze, dated to the Early Middle Ages."
 3d_model: meduza.glb
 story: 16-medusa.mp3
 transcript: true
