@@ -318,6 +318,7 @@ nav li {
 
 .menu-item:hover .container-text {
   display: flex;
+  opacity: 1;
 }
 
 .container-link {
@@ -1044,7 +1045,6 @@ p {
   }
 
   .container-text {
-    display: flex;
     padding-bottom: 2px;
     justify-content: center;
     align-items: center;
@@ -1056,6 +1056,8 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 115%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
     /* 16.1px */
   }
 
