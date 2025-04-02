@@ -13,9 +13,9 @@ transcript: true
 ---
 
 <div class="meta">
-Told by Someone's Name on August 5, 2024 <br>
+Told by Yusif on March 6, 2025 <br>
 Translated by Nilufer Musaeva<br>
-Recorded by Nilya's collaborator
+Transcribed by Gunay Ramazanova
 </div>
 
 I was digging near the old well, clearing out weeds and loosening the soil when my spade struck something solid. At first, I thought it was just another stone, but when I brushed away the dirt, a small, intricately carved amulet emerged from the earth. Its surface was covered in geometric patterns, worn smooth in places but still distinct, as if whispering an ancient story.
