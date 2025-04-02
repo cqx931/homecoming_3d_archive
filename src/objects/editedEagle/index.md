@@ -14,8 +14,7 @@ transcript: true
 
 <div class="meta">
 Told by Yusif on March 6, 2025 <br>
-Translated by Nilufer Musaeva<br>
-Transcribed by Gunay Ramazanova
+Translated and transcribed by Nilufer Musaeva<br>
 </div>
 
-FORGOTTTT
+Bronze amulet – Found in the ancient cemetery of Kıma Liqebriş. Discovered in 2016. It is in the shape of an eagle, with its talons (legs) clearly visible at the bottom. The head and beak are distinct. The front is smooth. The back has a broken loop intended for stringing. Dated to the 5th–4th centuries BCE.
