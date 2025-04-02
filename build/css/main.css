@@ -962,6 +962,12 @@ p {
 
 /* Mobile Version */
 @media only screen and (max-width: 768px) {
+  /* open button smaller */
+  .open_button {
+    font-size: 32px;
+    padding: 24px 40px 28px 40px;
+  }
+
   body {
     height: auto;
   }
