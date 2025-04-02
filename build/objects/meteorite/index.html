@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>meteorite</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NONE">
+  <meta name="description" content="A short description of your project should goes here">
   <link rel="stylesheet" href="/css/template.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -30,10 +30,6 @@
         <span>Place</span>
         Somewhere
       </div>
-      <div class="description">
-        <span>Description</span>
-        <p>NONE</p>
-      </div>
         <div class="story">
           <span>Story</span>
           <audio controls controlsList="nodownload noplaybackrate">
@@ -42,14 +38,14 @@
             <div id="readTranscript" onclick="showTranscript()">Read Transcript</div>
         </div>
     </section>
-      <a href="/objects/meduza/index.html">
+      <a id="previous_link" href="/objects/meduza/index.html">
 
         <!-- buttons -->
         <div class="button" id="previous">
           <img src="/imgs/previous.png" alt="">
         </div>
       </a>
-      <a href="/objects/pine/index.html">
+      <a id="next_link" href="/objects/pine/index.html">
         <div class="button" id="next">
           <img src="/imgs/next.png" alt="">
         </div>
@@ -87,6 +83,22 @@ be a meteorite, but we do not know for sure what it is.</p>
     function showTranscript() {
       document.getElementById('transcript').style.visibility = 'visible';
     }
+
+    // pressing arrows on keyboard to go to next/previous page
+    document.addEventListener("keydown", (event) => {
+      console.log(event.keyCode)
+      if (event.keyCode === 39) {
+        // next
+        const next = document.getElementById('next_link');
+        if (next) next.click();
+      }
+      if (event.keyCode === 37) {
+        // previous
+        const pre = document.getElementById('previous_link')
+        if(pre) pre.click();
+      }
+    });
+
   </script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <script>

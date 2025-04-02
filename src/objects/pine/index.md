@@ -6,7 +6,6 @@ layout: object.html
 collection: objects
 date: Date unknown
 place: Place unknown
-description: NONE
 3d_model: pine.glb
 story: meteorite_audio.mp3
 transcript: true

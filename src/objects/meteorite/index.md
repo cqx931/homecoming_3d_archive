@@ -6,7 +6,6 @@ layout: object.html
 collection: objects
 date: xxxx
 place: Somewhere
-description: NONE
 3d_model: meteorite.glb
 story: meteorite.mp3
 transcript: true

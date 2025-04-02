@@ -6,7 +6,6 @@ layout: object.html
 collection: objects
 date: Date unknown
 place: Tufan Mountain
-description: NONE
 3d_model: duck.glb
 story: animalskull.mp3
 transcript: true

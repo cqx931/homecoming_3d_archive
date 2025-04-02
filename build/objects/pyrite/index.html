@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>Pyrite stone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="This stone belongs to the collection of Hakim Ahmedov, local enthusiast and researcher, who passed away and left his family his diaries and a collection of stones. This is a pyrite stone.">
+  <meta name="description" content="A short description of your project should goes here">
   <link rel="stylesheet" href="/css/template.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -34,22 +34,15 @@
         <span>Description</span>
         <p>This stone belongs to the collection of Hakim Ahmedov, local enthusiast and researcher, who passed away and left his family his diaries and a collection of stones. This is a pyrite stone.</p>
       </div>
-        <div class="story">
-          <span>Story</span>
-          <audio controls controlsList="nodownload noplaybackrate">
-            <source src="/audio/NONE" type="audio/mpeg">
-          </audio>
-            <div id="readTranscript" onclick="showTranscript()">Read Transcript</div>
-        </div>
     </section>
-      <a href="/objects/pointyRingBadLighting/index.html">
+      <a id="previous_link" href="/objects/pointyRingBadLighting/index.html">
 
         <!-- buttons -->
         <div class="button" id="previous">
           <img src="/imgs/previous.png" alt="">
         </div>
       </a>
-      <a href="/objects/redStone/index.html">
+      <a id="next_link" href="/objects/redStone/index.html">
         <div class="button" id="next">
           <img src="/imgs/next.png" alt="">
         </div>
@@ -60,15 +53,6 @@
       </div>
     </a>
 
-      <div id="transcript">
-        <div id="closeTranscript" onclick="hideTranscript()">
-          Close
-        </div>
-        <div class="content">
-          
-        </div>
-        <div id="overflow"></div>
-      </div>
 
   </div>
   <script type="text/javascript">
@@ -79,6 +63,22 @@
     function showTranscript() {
       document.getElementById('transcript').style.visibility = 'visible';
     }
+
+    // pressing arrows on keyboard to go to next/previous page
+    document.addEventListener("keydown", (event) => {
+      console.log(event.keyCode)
+      if (event.keyCode === 39) {
+        // next
+        const next = document.getElementById('next_link');
+        if (next) next.click();
+      }
+      if (event.keyCode === 37) {
+        // previous
+        const pre = document.getElementById('previous_link')
+        if(pre) pre.click();
+      }
+    });
+
   </script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <script>

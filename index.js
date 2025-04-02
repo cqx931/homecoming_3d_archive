@@ -9,7 +9,7 @@ const Metalsmith = require('metalsmith'),
 const metalsmith = new Metalsmith(__dirname)
   .metadata({
     name: "Homecoming",
-    description: "A short description of your project should goes here"
+    website_description: "A short description of your project should goes here"
   })
   .source('./src')
   .destination('./build')

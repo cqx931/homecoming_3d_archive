@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>Silver bracelet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Based on its size, shape, and decorative elements, community suggests that this amulet may have been worn as a piece of personal adornment, perhaps on a cord or chain. The geometric patterns may have held symbolic or spiritual significance for the people of the Zangar settlement.yu">
+  <meta name="description" content="A short description of your project should goes here">
   <link rel="stylesheet" href="/css/template.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -41,14 +41,14 @@
           </audio>
         </div>
     </section>
-      <a href="/objects/bone/index.html">
+      <a id="previous_link" href="/objects/bone/index.html">
 
         <!-- buttons -->
         <div class="button" id="previous">
           <img src="/imgs/previous.png" alt="">
         </div>
       </a>
-      <a href="/objects/braidedThing/index.html">
+      <a id="next_link" href="/objects/braidedThing/index.html">
         <div class="button" id="next">
           <img src="/imgs/next.png" alt="">
         </div>
@@ -69,6 +69,22 @@
     function showTranscript() {
       document.getElementById('transcript').style.visibility = 'visible';
     }
+
+    // pressing arrows on keyboard to go to next/previous page
+    document.addEventListener("keydown", (event) => {
+      console.log(event.keyCode)
+      if (event.keyCode === 39) {
+        // next
+        const next = document.getElementById('next_link');
+        if (next) next.click();
+      }
+      if (event.keyCode === 37) {
+        // previous
+        const pre = document.getElementById('previous_link')
+        if(pre) pre.click();
+      }
+    });
+
   </script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <script>
