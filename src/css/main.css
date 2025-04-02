@@ -119,7 +119,16 @@ body.object {
   border-radius: 2px;
   position: relative;
 }
-
+.object .meta {
+  position: absolute;
+  top:0;
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
 .object:hover .open_button {
   visibility: visible !important;
 }
@@ -162,7 +171,7 @@ body.object {
   letter-spacing: -1px;
 }
 
-.object .meta {
+.content .meta {
   display: flex;
   width: 360px;
   min-width: 360px;
@@ -1168,7 +1177,7 @@ p {
   #transcript {
     margin-top: 150px;
   }
-  .object .meta {
+  .content .meta {
     font-size: 20px;
   }
   #transcript p {
