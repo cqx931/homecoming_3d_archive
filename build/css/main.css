@@ -112,7 +112,9 @@ body.object {
 .grid-5 {
   grid-template-columns: repeat(5, 1fr);
 }
-
+.grid-5 .object h4 {
+  font-size: 44px;
+}
 .object {
   aspect-ratio: 477/560;
   background-color: #EBE8E7;
@@ -172,6 +174,7 @@ body.object {
 }
 
 .content .meta {
+  position: relative;
   display: flex;
   width: 360px;
   min-width: 360px;
@@ -484,6 +487,19 @@ body.object {
   flex-direction: column;
   align-items: flex-end;
   background: var(--main-sand, #EBE8E7);
+}
+
+.homecoming_archive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  height: 64px;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 iframe {
