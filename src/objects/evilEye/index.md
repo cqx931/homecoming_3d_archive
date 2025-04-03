@@ -1,6 +1,6 @@
 ---
 number: 11
-name: evilEye
+name: Evil eye bead
 path: evilEye
 layout: object.html
 collection: objects

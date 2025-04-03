@@ -6,7 +6,7 @@ layout: object.html
 collection: objects
 date: III century BC
 place: Kıma liqebriş
-description: III century BC bronze ornament found in 2019, a decora- tive item that used to be a part of a hairpin.
+description: III century BC bronze ornament found in 2019, a decorative item that used to be a part of a hairpin.
 3d_model: tubularThing.glb
 story: 26hairpin.mp3
 transcript: true

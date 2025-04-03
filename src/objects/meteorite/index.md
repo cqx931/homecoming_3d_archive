@@ -1,11 +1,11 @@
 ---
 number: 17
-name: meteorite
+name: Volcanic stone
 path: meteorite
 layout: object.html
 collection: objects
-date: xxxx
-place: Somewhere
+date: Date unknown
+place: Place unknown
 3d_model: meteorite.glb
 story: meteorite.mp3
 transcript: true
