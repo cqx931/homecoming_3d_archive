@@ -7,7 +7,9 @@
   "author": "Qianxun Chen",
   "private": true,
   "dependencies": {
+    "embla-carousel": "^8.6.0",
     "express": "^4.17.2",
+    "glider-js": "^1.7.9",
     "handlebars": "^4.0.5",
     "liquid": "^5.1.1",
     "lodash": "^4.17.21",

@@ -447,6 +447,24 @@ body.object {
   aspect-ratio: 1/1;
 }
 
+
+.button-black:hover {
+  background: #000;
+  color: #fffff !important;
+  border-color: #000;
+}
+
+.button-black a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.button-black:hover a {
+  color: #fff;
+}
+
 .hide {
   display: none !important;
 }
@@ -508,6 +526,17 @@ iframe {
   height: calc(100vw/3/477*560);
 }
 
+iframe#vid {
+  aspect-ratio: 1920/1080;
+  align-self: stretch;
+}
+
+#video {
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+}
+
 .dection_objects {
   display: flex;
   padding: 0px 2px;
@@ -525,6 +554,13 @@ iframe {
   aspect-ratio: 957/555;
   align-self: stretch;
 }
+
+
+.landing .gifs {
+  width: 100%;
+}
+
+
 
 .landing #national_museum {
   width: 412px;
@@ -660,7 +696,7 @@ iframe {
   gap: 20px;
 }
 
-.landing p {
+.landing p, .landing ol, .landing ol li{
   align-self: stretch;
   color: #000;
   font-family: "PPMondwest";
@@ -953,6 +989,66 @@ h4 {
 p {
   font-weight: 400;
 }
+
+.embla {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  padding-left: 10px;
+}
+
+.embla__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Navigation Buttons */
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.embla__prev {
+  left: 10px;
+}
+
+.embla__next {
+  right: 10px;
+}
+
 
 /* ==========================================================================
   Responsible Design, breakpoint according to bootstrap
