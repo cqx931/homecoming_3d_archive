@@ -12,3 +12,4 @@ app.listen(http_port);
 console.log('HTTP Server started at http://localhost:' + http_port);
 
 open('http://localhost:' + http_port);
+
