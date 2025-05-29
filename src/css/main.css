@@ -72,7 +72,7 @@ h3 {
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
-  line-height: 70%;
+  line-height: 85%;
   /* 30.8px */
   margin:0px;
 }
@@ -84,6 +84,7 @@ h4 {
 nav li {
   padding: 0 1.5em 0 0.5em;
 }
+
 
 #gridContainer {
   display: grid;
@@ -1078,6 +1079,19 @@ p {
   pointer-events: none;
 }
 
+.embla-caption {
+  font-family: 'PPMondwest';
+  text-align: center; 
+  margin-top: 0.5em; 
+  font-size: 1em; 
+  color: #555; 
+}
+
+.caption-break {
+  display: none;
+}
+
+
 
 /* ==========================================================================
   Responsible Design, breakpoint according to bootstrap
@@ -1106,6 +1120,9 @@ p {
     height: 16px;  /* or your PNG height */
   }
 
+  .caption-break {
+    display: inline;
+  }
 }
 
 /* Mobile Version */
@@ -1290,6 +1307,38 @@ p {
   .col_1_2 {
     flex: 1 0 0;
   }
+
+  h3 {
+    font-size: 42px;
+    line-height: 120%;
+    /* 38.4px */
+  }
+  .caption-break {
+    display: inline;
+  }
+
+  .button-black {
+  position: relative;
+  top: 1em;
+  background: var(--main-black, #000);
+  color: var(--main-white, #fff);
+  border: 1px solid var(--main-black, #000);
+}
+
+.button-black a {
+  color: #fff;
+}
+
+.button-black:hover {
+  background: var(--main-white, #fff);
+  color: var(--main-black, #000);
+  border-color: var(--main-black, #000);
+}
+
+.button-black:hover a {
+  color: #000;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1344,5 +1393,9 @@ p {
   }
   .viewer_3d {
     height: 50vh;
+  }
+
+  .caption-break {
+    display: inline;
   }
 }
