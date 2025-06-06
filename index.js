@@ -9,7 +9,7 @@ const Metalsmith = require('metalsmith'),
 const metalsmith = new Metalsmith(__dirname)
   .metadata({
     name: "Homecoming",
-    website_description: "A short description of your project should goes here"
+    website_description: "Homecoming project integrates digital archiving, collaborative publications, and artistic installations to preserve and share the Khinalig village's cultural narratives. Focused on the language, regional topography, and archaeological finds, it examines identity, belonging, and how local voices can be strenghtened in curatorial processes."
   })
   .source('./src')
   .destination('./build')
