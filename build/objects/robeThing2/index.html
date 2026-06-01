@@ -37,7 +37,7 @@
         <div class="story">
           <span>Story</span>
           <audio controls controlsList="nodownload noplaybackrate">
-            <source src="/audio/12-clothespin.mp3" type="audio/mpeg">
+            <source src="/audio/12-clothespin.mp3" type="audio/mpeg" preload="none">
           </audio>
             <div id="readTranscript" onclick="showTranscript()">Read Transcript</div>
         </div>
@@ -80,7 +80,6 @@ Transcribed by Gunay Ramazanova
   </div>
   <script type="text/javascript">
     function hideTranscript() {
-      console.log("hideTranscript");
       document.getElementById('transcript').style.visibility = 'hidden';
     }
 
@@ -103,11 +102,11 @@ Transcribed by Gunay Ramazanova
     });
 
   </script>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <script>
     self.ModelViewerElement = self.ModelViewerElement || {};
     self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
   </script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" defer></script>
 </body>
 
 </html>

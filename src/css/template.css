@@ -201,8 +201,6 @@ code {
   Site - dallasbass.com
 */
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -965,93 +963,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* Dropdown Menu Code */
-.site-navigation {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 90;
-  background-color: rgba(30, 30, 30, 0.9);
-}
-
-.site-navigation.forensic {
-  background-color: rgba(30, 30, 30, 0.5);
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-.clearfix {
-  display: inline-block;
-}
-
-/* start commented backslash hack \*/
-* html .clearfix {
-  height: 1%;
-}
-
-.clearfix {
-  display: block;
-}
-
-/* close commented backslash hack */
-nav {
-  color: #666;
-  width: 100%;
-  height: 70px;
-  position: relative;
-}
-
-nav ul {
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-  margin-bottom: 5px;
-  padding: 0;
-}
-
-nav li {
-  margin: 0;
-  padding: 0 1em 0;
-  float: left;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  font-size: 1.1em;
-  color: #555;
-}
-
-nav b {
-  font-weight: 600;
-  color: white;
-}
-
-nav>ul>li>a.current {
-  color: white !important;
-}
-
-nav>ul>a:hover {
-  color: black;
-}
-
-nav>ul>li>a {
-  text-transform: uppercase;
-  color: #666;
-  text-decoration: none;
-}
-
-ul.double_col {
-  max-width: 15em;
-}
-
-ul.double_col li {
-  width: 49%;
-}
-
-/*End of Dropdown Menu*/
